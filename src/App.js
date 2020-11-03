@@ -6,6 +6,7 @@ import {
   Select
 } from '@material-ui/core';
 
+import InfoBox from './InfoBox'
 
 
 function App() {
@@ -61,6 +62,15 @@ function App() {
 
           </Select>
         </FormControl>
+      </div>
+
+      {/* App Info Boxes */}
+      <div className="app__stats">
+            <InfoBox title="Coronavirus Cases" cases={123} total={2000} />
+
+            <InfoBox title="Recovered" cases={1234} total={3000} />
+
+            <InfoBox title="Deaths" cases={123} total={4000} />
       </div>
 
     </div>
