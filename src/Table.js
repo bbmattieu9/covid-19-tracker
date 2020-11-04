@@ -1,4 +1,5 @@
 import React from 'react'
+import './Table.css'
 
 function Table({ countries }) {
     return (
@@ -7,7 +8,7 @@ function Table({ countries }) {
                 countries.map(({country, cases}) => (
                     <tr>
                         <td>{country}</td>
-                <td>{cases}</td>
+                        <td>{cases}</td>
                     </tr>
                 ))
             }
