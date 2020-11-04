@@ -10,6 +10,7 @@ import {
 
 import InfoBox from './InfoBox';
 import Map from './Maps';
+import Table from './Table';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
   const [countries, setCountries] = useState([]);
   const [country, setCountry] = useState('worldwide');
   const [countryInfo, setCountryInfo] = useState({});
+  const [tableData, setTableData] = useState([]);
 
   
   useEffect(() => {
@@ -31,7 +33,7 @@ function App() {
               name: country.country,
               value: country.countryInfo.iso2
             }));
-
+            setTableData(data);
             setCountries(countries);
         })
       };
@@ -48,7 +50,6 @@ function App() {
 
   const onCountryChange = async (event) => {
     const countryCode = event.target.value;
-    // console.log('[You selected]: ', countryCode);
     setCountry(countryCode); 
 
     const url = countryCode === 'worldwide'
@@ -104,7 +105,7 @@ function App() {
      <Card className="app__right">
             <CardContent>
                <h3>Live cases by country</h3>
-
+              <Table countries={tableData} />
 
                <h3>Worldwide new cases</h3>
             </CardContent>
