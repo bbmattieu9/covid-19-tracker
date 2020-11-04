@@ -11,6 +11,7 @@ import {
 import InfoBox from './InfoBox';
 import Map from './Maps';
 import Table from './Table';
+import  {sortData } from './util';
 
 
 function App() {
@@ -33,7 +34,9 @@ function App() {
               name: country.country,
               value: country.countryInfo.iso2
             }));
-            setTableData(data);
+
+            const sortedData = sortData(data);
+            setTableData(sortedData);
             setCountries(countries);
         })
       };
