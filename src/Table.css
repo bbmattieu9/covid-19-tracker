@@ -3,7 +3,10 @@
     overflow: scroll;
     height: 400px;
     color: #6a5d5d;
+    
 }
+
+
 
 .table tr {
     display: flex;
