@@ -17,6 +17,15 @@ body {
   align-items: center;
   margin-bottom: 20px;
   justify-content: space-between;
+  background-color: #13121205;
+   /* // 121212 */
+
+}
+
+.infoBox__statImg {
+  width: 40px;
+  border-radius: 50%;
+  /* margin-top: 20px; */
 }
 
 
@@ -38,7 +47,7 @@ body {
 
   .primary-color {
     text-align: center;
-    color: rgb(29, 161, 242);
+    color: #880e4f;
   }
 
 
