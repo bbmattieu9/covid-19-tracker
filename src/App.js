@@ -11,6 +11,7 @@ import {
 import InfoBox from './InfoBox';
 import Map from './Maps';
 import Table from './Table';
+import LineGraph from './LineGraph';
 import  {sortData } from './util';
 
 
@@ -115,6 +116,9 @@ function App() {
 
                <h3 className="primary-color">Worldwide new cases</h3>
             </CardContent>
+
+
+            <LineGraph />
      </Card>
 
     </div>
