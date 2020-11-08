@@ -96,11 +96,20 @@ function App() {
 
       {/* App Info Boxes */}
       <div className="app__stats">
-            <InfoBox title="Cases" cases={countryInfo.todayCases} total={countryInfo.cases} />
+            <InfoBox 
+                title="Cases" 
+                cases={countryInfo.todayCases} 
+                total={countryInfo.cases} />
 
-            <InfoBox title="Recovered" cases={countryInfo.todayRecovered} total={countryInfo.recovered} />
+            <InfoBox 
+                title="Recovered" 
+                cases={countryInfo.todayRecovered} 
+                total={countryInfo.recovered} />
 
-            <InfoBox title="Deaths" cases={countryInfo.todayDeaths} total={countryInfo.deaths} />
+            <InfoBox 
+                title="Deaths" 
+                cases={countryInfo.todayDeaths} 
+                total={countryInfo.deaths} />
       </div>
 
 
@@ -115,10 +124,8 @@ function App() {
               <Table countries={tableData} />
 
                <h3 className="primary-color">Worldwide new cases</h3>
+               <LineGraph />
             </CardContent>
-
-
-            <LineGraph />
      </Card>
 
     </div>
