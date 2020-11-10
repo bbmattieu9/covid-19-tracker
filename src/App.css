@@ -19,19 +19,16 @@ body {
   justify-content: space-between;
   background-color: #13121205;
    /* // 121212 */
-
 }
 
 .infoBox__statImg {
   width: 40px;
   border-radius: 50%;
-  /* margin-top: 20px; */
 }
 
 
 .app__left {
   flex: 0.9;
-  /* border: 1px solid; */
   border-radius: 10px !important;
   border-top: 0px;
   padding: 12px;
@@ -42,14 +39,12 @@ body {
 .app__right {
     border-radius: 10px !important;
     padding: 10px;
-    /* box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 4px 9px 5px rgba(0,0,0,0.12); */
   }
 
   .primary-color {
     text-align: center;
     color: #880e4f;
   }
-
 
 
 .app__stats {
@@ -61,5 +56,9 @@ body {
 @media (max-width: 990px) {
   .App {
     flex-direction: column;
+  }
+
+  .app__right {
+    margin-top: 10px;
   }
 }
