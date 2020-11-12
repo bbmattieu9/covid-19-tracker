@@ -9,10 +9,11 @@ import {
 } from '@material-ui/core';
 
 import InfoBox from './InfoBox';
-import Map from './Maps';
+import Map from './Map';
 import Table from './Table';
 import LineGraph from './LineGraph';
 import  {sortData } from './util';
+import "leaflet/dist/leaflet.css";
 
 
 function App() {
