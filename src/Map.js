@@ -1,6 +1,6 @@
 import React from 'react';
 import './Map.css';
-import { TileLayer, MapContainer, Map as LeafLetMap   } from 'react-leaflet';
+import { TileLayer, MapContainer} from 'react-leaflet';
 
 function Map() {
     return (
