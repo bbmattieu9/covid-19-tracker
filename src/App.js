@@ -73,8 +73,8 @@ function App() {
       setCountry(countryCode);
       setCountryInfo(data);
 
-      setMapCenter({lat: data.countryInfo.lat, lng: data.countryInfo.long});
-      setMapZoom(4);
+      setMapCenter([data.countryInfo.lat, data.countryInfo.long]);
+      setMapZoom(13);
     });
   };
 
