@@ -14,10 +14,12 @@
              <CardContent>
                 
                  {/* title */}
-                 <Typography className="infoBox__title" color="textSecondary"> {title}</Typography>
+                 <Typography className="infoBox__title" color="textSecondary"> 
+                 {title}
+                 </Typography>
 
                  {/* number of cases */}
-                 <h3 className="infoBox__cases">{cases}</h3>
+                 <h3 className={`infoBox__cases ${!isRed && 'infoBox__cases--green'}`}>{cases}</h3>
 
                  {/* total */}
                  <Typography className="infoBox__total" color="textSecondary">

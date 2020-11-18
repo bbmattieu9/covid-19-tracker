@@ -37,8 +37,16 @@ body {
 
 
 .app__right {
+  display: flex;
+  flex-direction: column;
     border-radius: 10px !important;
     padding: 10px;
+  }
+
+  .app__right .MuiCardContent-root {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
   }
 
   .primary-color {
@@ -46,10 +54,25 @@ body {
     color: #880e4f;
   }
 
+  .line_graphTitle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
 
 .app__stats {
   display: flex;
   justify-content: space-between;
+}
+
+.app__dropdown {
+  background-color: white;
+}
+
+
+
+.app__graph {
+  flex-grow: 1;
 }
 
 
