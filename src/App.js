@@ -11,6 +11,7 @@ import {
 import InfoBox from './InfoBox';
 import Map from './Map';
 import Table from './Table';
+import Footer from './Footer';
 import LineGraph from './LineGraph';
 import  {sortData, prettyStatFormat } from './util';
 import "leaflet/dist/leaflet.css";
@@ -97,7 +98,7 @@ function App() {
               <MenuItem value="worldwide">Worldwide</MenuItem>
             {
               countries.map((country) => (
-              <MenuItem value={country.value}>{country.name}</MenuItem>
+              <MenuItem key={country.value} value={country.value}>{country.name}</MenuItem>
               ))
             }
 
@@ -151,6 +152,8 @@ function App() {
                <LineGraph className="app__graph" casesType={casesType} />
             </CardContent>
      </Card>
+
+
 
     </div>
   );
